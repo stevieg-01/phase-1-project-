@@ -21,13 +21,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Full-time jobs</a>
-              <label>Full-Time jobs
-              <select id="job" name="jobs">
-                <option value="Apply now"></option>
-              </select>
-              </label>
-             
-            </li>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Part-time jobs</a>
             </li>
@@ -88,56 +82,34 @@
 
               </div>
             </div>
-          </div>
-  
-</form>
+          </div>  
+
+
+
+          <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="Job">Job:</label>
+            <input type="job" id="job" name="jobs" required>
+            <button type="submit">Submit</button>
+          </form>
+
       <section>
         <ul id="list"></ul>
         <div class="row">
           <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+          </div>
+            
         </div>
         </div>
       </section>
      
-      <form action="submit_contact.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-         <input type="email" id="email" name="email" required>
-           <label for="phone">Phone:</label>
-                 <input type="tel" id="phone" name="phone" required>
-                 <label for="Jobtype">Job:</label>
-                 <select id="job" name="jobs">
-                  <option value="truckdriving">Truckdriver</option>
-                  <option value="shop attendants">shop attendant</option>
-                  <option value="mechanic">mechanic</option>
-                  <option value="Online writer">online writer</option>
-                  <option value="roadside cleaners">roadside cleaners</option>
-                  <option value="county council">county council</option>
-                  <option value="warehouse manager">warehouse manager</option>
-     
-                 </select>
-                        <button type="submit">Submit</button>
-                        
-              </form>
-              
-                <script>
-                  var elem= document.getElementById("demo");
 
-     elem.addEventListener("mouseover", function(){
-        elem.innerHTML = "Hello world";
-     })
-
-                </script>
-
-              
-              
-
-              
-               
-              
-  
-      
       </body>
      
       

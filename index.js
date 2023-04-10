@@ -1,5 +1,5 @@
 function fetchdata(){
-    fetch(' http://localhost:8000/jobs')
+    fetch(' http://localhost:3500/jobs')
     .then(response => response.json())
      // .then((jobs)=>
         .then(data=>data.forEach(person=>loadData(person)))
@@ -38,12 +38,7 @@ function fetchdata(){
      });
 
 
-     var elem= document.getElementById("demo");
-
-     elem.addEventListener("mouseover", function(){
-        elem.innerHTML = "Hello world";
-     })
-
+     
 
 
                
